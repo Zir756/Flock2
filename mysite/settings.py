@@ -18,11 +18,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Tepmpateフォルダへの絶対パスを定義
 TEMPLATE_DIR = BASE_DIR / "Template"
 
-# staticフォルダへの絶対パスを定義
-STATIC_DIR = BASE_DIR / "static"
+# # staticフォルダへの絶対パスを定義
+# STATIC_DIR = BASE_DIR / "static"
 
-# メディアフォルダへの絶対パスを定義
-MEDIA_DIR = BASE_DIR / "media"
+# # メディアフォルダへの絶対パスを定義
+# MEDIA_DIR = BASE_DIR / "media"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -65,7 +65,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR,],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -140,11 +140,11 @@ USE_TZ = True
 
 # Static files
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR,]
+# STATICFILES_DIRS = [STATIC_DIR,]
 
-#MEDIA_DIR
-MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = "/media/"
+# #MEDIA_DIR
+# MEDIA_ROOT = MEDIA_DIR
+# MEDIA_URL = "/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
